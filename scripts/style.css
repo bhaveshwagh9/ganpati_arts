@@ -1,0 +1,611 @@
+/* ==================================================
+   RESET
+================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#FAF7F2;
+
+    color:#3A2E25;
+
+    line-height:1.6;
+
+}
+
+/* ==================================================
+   VARIABLES
+================================================== */
+
+:root{
+
+    --primary:#B88A44;
+
+    --brown:#3A2E25;
+
+    --light:#FAF7F2;
+
+    --white:#ffffff;
+
+    --shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 18px;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 2px 15px rgba(0,0,0,.05);
+
+}
+
+.logo{
+
+    height:55px;
+
+    width:auto;
+
+}
+
+.language-btn{
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+    border-radius:30px;
+
+    padding:10px 16px;
+
+    cursor:pointer;
+
+    font-weight:500;
+
+}
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero{
+
+    padding:20px;
+
+}
+
+.hero-image{
+
+    width:100%;
+
+    border-radius:24px;
+
+    display:block;
+
+    box-shadow:var(--shadow);
+
+}
+
+.hero-content{
+
+    text-align:center;
+
+    margin-top:35px;
+
+}
+
+.hero h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:44px;
+
+    line-height:1.15;
+
+    margin-bottom:18px;
+
+}
+
+.hero p{
+
+    color:#6d6259;
+
+    font-size:16px;
+
+    margin-bottom:30px;
+
+}
+
+.primary-btn{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:15px 32px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(184,138,68,.35);
+
+}
+
+/* ==================================================
+   FEATURES
+================================================== */
+
+.features{
+
+    padding:70px 20px;
+
+}
+
+.features h2{
+
+    text-align:center;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:38px;
+
+    margin-bottom:35px;
+
+}
+
+.feature-grid{
+
+    display:grid;
+
+    gap:20px;
+
+}
+
+.feature-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.feature-icon{
+
+    font-size:42px;
+
+    margin-bottom:18px;
+
+}
+
+.feature-card h3{
+
+    margin-bottom:10px;
+
+}
+
+.feature-card p{
+
+    color:#666;
+
+}
+
+/* ==================================================
+   COLLECTION
+================================================== */
+
+.collection{
+
+    padding:70px 20px;
+
+}
+
+.collection h2{
+
+    text-align:center;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:40px;
+
+    margin-bottom:40px;
+
+}
+
+.products{
+
+    display:grid;
+
+    gap:30px;
+
+}
+
+.product-card{
+
+    background:white;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.product-card img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.product-info{
+
+    padding:22px;
+
+}
+
+.product-info h3{
+
+    font-size:24px;
+
+    margin-bottom:8px;
+
+}
+
+.product-info p{
+
+    color:#777;
+
+}
+
+.price{
+
+    font-size:28px;
+
+    color:var(--primary);
+
+    font-weight:bold;
+
+    margin:15px 0;
+
+}
+
+.available{
+
+    display:inline-block;
+
+    background:#28a745;
+
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    margin-bottom:20px;
+
+}
+
+.sold{
+
+    display:inline-block;
+
+    background:#b02a37;
+
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    margin-bottom:20px;
+
+}
+
+.product-info a{
+
+    display:block;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    background:#25D366;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+}
+
+/* ==================================================
+   INSTAGRAM
+================================================== */
+
+.instagram{
+
+    padding:70px 20px;
+
+    text-align:center;
+
+}
+
+.instagram h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:38px;
+
+    margin-bottom:15px;
+
+}
+
+.instagram p{
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+
+.instagram a{
+
+    display:inline-block;
+
+    background:#E1306C;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+}
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+
+    background:#3A2E25;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+footer h3{
+
+    font-size:30px;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+footer p{
+
+    margin-top:10px;
+
+}
+
+.footer-buttons{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-buttons a{
+
+    background:var(--primary);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 24px;
+
+    border-radius:30px;
+
+}
+
+.copyright{
+
+    margin-top:30px;
+
+    font-size:14px;
+
+    opacity:.7;
+
+}
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media(min-width:768px){
+
+.feature-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.products{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ==================================================
+   DESKTOP
+================================================== */
+
+@media(min-width:1100px){
+
+.header{
+
+    padding:15px 60px;
+
+}
+
+.logo{
+
+    height:70px;
+
+}
+
+.hero{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:60px 20px;
+
+}
+
+.hero-content{
+
+    text-align:left;
+
+    margin-top:0;
+
+}
+
+.hero h1{
+
+    font-size:68px;
+
+}
+
+.features{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.feature-grid{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+.collection{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.products{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+}
